@@ -1,0 +1,8 @@
+version: '3'
+services:
+  app:
+    build: ./build/
+    volumes:
+      - ./src:/var/www/html:rw
+    ports:
+      - "80:80"
